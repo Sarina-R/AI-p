@@ -1,0 +1,125 @@
+.gpt3__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
+}
+
+.gpt3__navbar-link {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpt3__navbar-links_logo {
+  margin-right: 2rem;
+}
+
+.gpt3__navbar-link_logo img {
+  width: 62.56px;
+  height: 16.02px;
+}
+
+.gpt3__navbar-link-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.gpt3__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  float: left;
+}
+.gpt3__navbar-link-container p,
+.gpt3__navbar-sign p,
+.toggle p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.gpt3__navbar-sign button,
+.toggle button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.toggle svg {
+  cursor: pointer;
+  margin: 7px;
+}
+.toggle {
+  position: relative;
+  margin-left: 2rem;
+  display: none;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* this three make our prop goas to right side */
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  margin-top: 2rem;
+  min-width: 190px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.menu-sign {
+  display: none;
+}
+.toggle p {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .gpt3__navbar-link-container {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .gpt3__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3__navbar {
+    padding: 2rem;
+  }
+
+  .gpt3__navbar-sign {
+    display: none;
+  }
+
+  .menu-container {
+    top: 20px;
+  }
+
+  .menu-sign {
+    display: block;
+  }
+}
