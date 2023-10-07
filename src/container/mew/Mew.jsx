@@ -27,7 +27,7 @@ const items = [
 
 const Mew = () => {
   return (
-    <div className="section-m">
+    <div className="section-m" id="features">
       <div className="left">
         <h1>
           The Future is Now and You Just Need To Realize It. Step into Future
