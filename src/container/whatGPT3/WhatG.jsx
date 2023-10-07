@@ -1,6 +1,6 @@
 import React from "react";
 import "./whatG.css";
-import Features from "../features/Features.jsx";
+import Features from "../../components/feature/Features";
 const WhatG = () => {
   return (
     <>
