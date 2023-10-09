@@ -1,12 +1,21 @@
 import React from "react";
 import "./blog.css";
 import Article from "../../components/article/Article";
-import item from "./data.js ";
-
+import data from "./data";
 const Blog = () => {
   return (
-    <div>
-      <Article data={item} />
+    <div className="blog">
+      <h1>A lot is happening, We are blogging about it.</h1>
+      <div className="grid">
+        {data.map((datas) => (
+          <Article
+            {...datas}
+            title={datas.title}
+            text={datas.text}
+            key={datas.id}
+          />
+        ))}
+      </div>
     </div>
   );
 };
