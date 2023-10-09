@@ -2,6 +2,7 @@ import React from "react";
 import "./blog.css";
 import Article from "../../components/article/Article";
 import data from "./data";
+import ai from "../../assets/ai.png";
 const Blog = () => {
   return (
     <div className="blog">
