@@ -1,6 +1,35 @@
+.grid-a {
+  height: 100%;
+  background: var(--color-blog);
+  display: flex;
+  flex-direction: column;
+}
+.grid-a p,
+.grid-a h2 {
+  color: aliceblue;
+  margin: 10px 0;
+}
+.grid-a h2 {
+  font-size: 20px;
+  cursor: pointer;
+}
+.grid-a p {
+  font-size: x-small;
+}
 .grid-a img {
   width: 100%;
 }
 .img-a {
-  width: 400px;
+  width: 100%;
+  background-image: initial;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.grid-a p:last-child {
+  cursor: pointer;
 }

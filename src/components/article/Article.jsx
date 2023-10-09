@@ -9,9 +9,13 @@ const Article = ({ title, date, img }) => {
       </div>
 
       <div className="text-container">
-        <p>{date}</p>
-        <h2>{title}</h2>
-        <p>Read Full Article</p>
+        <div>
+          <p>{date}</p>
+          <h2>{title}</h2>
+        </div>
+        <div>
+          <p>Read Full Article</p>
+        </div>
       </div>
     </div>
   );
