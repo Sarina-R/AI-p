@@ -1,0 +1,50 @@
+.cta {
+  background: var(--gradient-bar);
+  margin: 0 4rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 11px;
+}
+.left-c h3 {
+  font-weight: 800;
+}
+.left-c p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.right-c button {
+  background-color: black;
+  color: aliceblue;
+  text-transform: capitalize;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 915px) {
+  .cta {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cta {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  .left-c {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    margin-bottom: 1rem;
+  }
+  /* .left-c h3 {
+    text-align: center;
+  } */
+}
