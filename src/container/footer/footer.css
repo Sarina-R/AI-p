@@ -48,7 +48,7 @@
 .right-f-a h4,
 .right-f-b h4,
 .right-f-c h4 {
-  font-size: 15px !important;
+  font-size: 19px !important;
   margin-bottom: 1rem !important;
 }
 .right-f-a,
@@ -60,7 +60,7 @@
 p {
   margin-bottom: 0.5rem;
   color: aliceblue;
-  font-size: x-small;
+  font-size: small;
 }
 @media screen and (max-width: 1050px) {
   .top-f h1 {
