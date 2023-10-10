@@ -1,0 +1,138 @@
+.section-f {
+  background: var(--color-footer);
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 3rem 10rem;
+}
+.top-f {
+  padding: 0 6rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-f h1 {
+  text-align: center;
+  font-size: 62px;
+  line-height: 120.968%;
+  margin-bottom: 2rem;
+}
+.top-f button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-color: aliceblue;
+  border-style: solid;
+  color: aliceblue;
+  background-color: var(--color-footer);
+}
+.bottom-f {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.left-f {
+  flex: 1;
+}
+.left-f img {
+  margin-bottom: 0.5rem;
+}
+.right-f {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 19rem;
+}
+.right-f-a h4,
+.right-f-b h4,
+.right-f-c h4 {
+  font-size: 15px !important;
+  margin-bottom: 1rem !important;
+}
+.right-f-a,
+.right-f-b,
+.right-f-c {
+  margin-right: 1rem;
+}
+.section-f h4,
+p {
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+  font-size: x-small;
+}
+@media screen and (max-width: 1050px) {
+  .top-f h1 {
+    font-size: 40px;
+  }
+  .top-f button {
+    padding: 0.75rem 1.5rem;
+    /* font-size: 12px; */
+  }
+  .top-f {
+    padding: 0 1rem;
+  }
+  .right-f {
+    padding-left: 7rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .top-f h1 {
+    font-size: 30px;
+  }
+  .top-f button {
+    font-size: 10px;
+  }
+
+  .section-f {
+    padding: 2rem 3rem;
+  }
+  .top-f {
+    padding: 0 4rem;
+  }
+  .right-f {
+    padding-left: 7rem;
+  }
+  .section-f h4,
+  p {
+    margin-bottom: 0.25rem;
+    font-size: xx-small;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section-f {
+    padding: 1.5rem;
+  }
+  .bottom-f img {
+    width: 80px;
+  }
+  .right-f {
+    padding-left: 3rem;
+  }
+  .right-f-c {
+    margin: 0;
+  }
+  .section-f p {
+    font-size: 8px;
+  }
+  .section-f h4 {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bottom-f {
+    flex-direction: column;
+    /* flex-direction: column-reverse;
+    align-items: flex-end; */
+  }
+  .top-f {
+    padding: 0;
+  }
+  .left-f p {
+    display: none;
+  }
+  .right-f {
+    padding: 1rem 0;
+  }
+}
