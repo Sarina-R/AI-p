@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
+import { useNavigate } from "react-router-dom";
+import Signup from "../../container/signup/signup";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/signup");
+  };
+
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-link">
@@ -30,8 +38,9 @@ const Navbar = () => {
         </div>
         <div>
           <div className="gpt3__navbar-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
+            <button type="button" onClick={handleClick}>
+              Sign up
+            </button>
           </div>
           <div className="toggle">
             {toggleMenu ? (
@@ -67,8 +76,9 @@ const Navbar = () => {
                   </p>
                 </div>
                 <div className="menu-sign">
-                  <p>Sign in</p>
-                  <button type="button">Sign up</button>
+                  <button type="button" onClick={handleClick}>
+                    Sign up
+                  </button>
                 </div>
               </div>
             )}
