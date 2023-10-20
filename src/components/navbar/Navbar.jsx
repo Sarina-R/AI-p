@@ -3,7 +3,6 @@ import logo from "../../assets/logo.svg";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import { useNavigate } from "react-router-dom";
-import Signup from "../../container/signup/signup";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -39,7 +38,7 @@ const Navbar = () => {
         <div>
           <div className="gpt3__navbar-sign">
             <button type="button" onClick={handleClick}>
-              Sign up
+              Login
             </button>
           </div>
           <div className="toggle">
@@ -77,7 +76,7 @@ const Navbar = () => {
                 </div>
                 <div className="menu-sign">
                   <button type="button" onClick={handleClick}>
-                    Sign up
+                    Login
                   </button>
                 </div>
               </div>
