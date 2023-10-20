@@ -87,9 +87,6 @@ input:focus {
   .section-sign {
     padding: 1rem 4rem;
   }
-  .s-body {
-    display: inline;
-  }
 }
 @media screen and (max-width: 655px) {
   .section-sign {
