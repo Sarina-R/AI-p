@@ -65,7 +65,8 @@ span {
   cursor: pointer;
   padding-left: 1rem;
 }
-input:focus {
+input:focus,
+input:valid {
   color: white;
   outline: 0;
 }
