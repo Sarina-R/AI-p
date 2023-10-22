@@ -1,3 +1,6 @@
+.click {
+  cursor: pointer;
+}
 .section-f {
   background: var(--color-footer);
   display: flex;
