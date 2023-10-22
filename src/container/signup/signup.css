@@ -43,7 +43,7 @@
 }
 .section-sign input {
   width: 100%;
-  padding: 0 0 10px 8px;
+  padding: 0 30px 10px 8px; /*for dont having overflow between input and icon*/
   background-color: transparent;
   margin-bottom: 0.5rem;
   border: none;
