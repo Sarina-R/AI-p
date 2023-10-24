@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./email.css";
 import emailjs from "@emailjs/browser";
-// import PopUp from "./PopUp/PopUp";
+import PopUp from "./PopUp/PopUp";
 
 const Email = () => {
   const form = useRef();
@@ -26,7 +26,17 @@ const Email = () => {
         }
       );
   };
+  // Create a state variable to control the visibility of the PopUp component
+  const [showPopUp, setShowPopUp] = useState(true);
 
+  // Create a function to toggle the state variable when the input element is clicked
+  const handlePopUp = () => {
+    setShowPopUp(!showPopUp);
+    // Add a timer function that will set the showPopUp state variable to false after 5 seconds
+    setTimeout(() => {
+      setShowPopUp(false);
+    }, 3500);
+  };
   return (
     <div className="body">
       <section className="section-email">
@@ -48,7 +58,7 @@ const Email = () => {
             </div>
           </div>
           <div className="send">
-            <input type="submit" value="Send" />
+            <input type="submit" value="Send" onClick={handlePopUp} />
           </div>
         </form>
         <div className="right-e">
@@ -69,6 +79,8 @@ const Email = () => {
           </p>
         </div>
       </section>
+      {/* Render the PopUp component conditionally based on the state variable */}
+      {showPopUp && <PopUp />}
     </div>
   );
 };
