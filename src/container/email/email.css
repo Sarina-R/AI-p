@@ -1,0 +1,163 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-email {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  max-width: 50rem;
+  padding: 5% 3%;
+  margin: 0rem 2rem;
+  border: 3px solid var(--color-text);
+  box-shadow: 0 0 25px var(--color-text);
+}
+.right-e {
+  z-index: 1;
+  width: 100%;
+  text-align: end;
+  padding-left: 90px;
+}
+.right-e h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+.right-e h1 {
+  font-size: 60px;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+.formE {
+  z-index: 1;
+  width: 100%;
+}
+.formE h1 {
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  margin-top: -40px;
+}
+.email,
+.message,
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 90px;
+  padding-right: 20px;
+}
+.name {
+  margin-top: 56px;
+}
+.input-box label {
+  transition: 0.5s;
+  margin-top: -40px;
+}
+/*when we want to focus*/
+input:focus + label {
+  color: var(--color-text);
+  margin-top: -47px;
+  font-size: smaller;
+}
+textarea:focus + label {
+  position: absolute;
+  color: var(--color-text);
+}
+.message input {
+  height: 100%;
+}
+.lable {
+  position: absolute;
+}
+.message {
+  margin: 0;
+}
+.send input {
+  margin: 0;
+  border: none !important;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 30%;
+  background: var(--gradient-bar);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.body input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-subtext);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+textarea {
+  border: 1px solid var(--color-subtext);
+  height: 150px;
+  margin-bottom: 10px;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 340px;
+  width: 800px;
+  height: 800px;
+  transform: rotate(90deg) skewY(30deg);
+  background: var(--color-blog);
+  border: 3px solid var(--color-text);
+  transition: 0.5s;
+}
+.pSmall {
+  display: none;
+}
+@media screen and (min-width: 820px) {
+  .bg {
+    left: 420px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section-email {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15%;
+  }
+  .right-e {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    text-align: start;
+  }
+  .right-e p {
+    font-size: 14px;
+  }
+  .bg {
+    transform: rotate(0deg) skewY(0deg);
+    top: 62%;
+    left: 0;
+  }
+  .input-box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-email {
+    padding: 25% 10% 0% 10%;
+  }
+  .input-box {
+    width: 100%;
+  }
+  .pLarg {
+    display: none;
+  }
+  .pSmall {
+    display: inline;
+  }
+  .bg {
+    top: 54%;
+  }
+}
