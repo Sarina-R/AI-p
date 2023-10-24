@@ -73,7 +73,7 @@
   background: var(--gradient-bar);
   cursor: pointer;
 }
-span {
+.span {
   color: var(--color-subtext);
   cursor: pointer;
   padding-left: 1rem;
