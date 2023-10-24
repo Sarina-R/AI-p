@@ -53,6 +53,7 @@ p {
   margin-top: 56px;
 }
 .input-box label {
+  color: white;
   transition: 0.5s;
   margin-top: -40px;
 }
