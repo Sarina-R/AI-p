@@ -27,7 +27,12 @@ const Signup = () => {
               <button className="btn">Login</button>
               <p>
                 Don't have an account?{" "}
-                <span onClick={() => setToggleSign(!toggleSign)}>Sign Up</span>
+                <span
+                  className="span"
+                  onClick={() => setToggleSign(!toggleSign)}
+                >
+                  Sign Up
+                </span>
               </p>
             </div>
             <div className="right-login">

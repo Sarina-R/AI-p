@@ -27,7 +27,7 @@ const Email = () => {
       );
   };
   // Create a state variable to control the visibility of the PopUp component
-  const [showPopUp, setShowPopUp] = useState(true);
+  const [showPopUp, setShowPopUp] = useState(false);
 
   // Create a function to toggle the state variable when the input element is clicked
   const handlePopUp = () => {
