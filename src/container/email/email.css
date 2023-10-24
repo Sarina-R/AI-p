@@ -75,6 +75,12 @@ textarea:focus + label {
 .message {
   margin: 0;
 }
+textarea:focus,
+textarea:valid {
+  color: white;
+  outline: 0;
+  padding: 10px;
+}
 .send input {
   margin: 0;
   border: none !important;
