@@ -1,14 +1,9 @@
 import React, { useRef } from "react";
 import "./email.css";
 import emailjs from "@emailjs/browser";
-import { useNavigate } from "react-router-dom";
+// import PopUp from "./PopUp/PopUp";
 
 const Email = () => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/AI-p");
-  };
-
   const form = useRef();
 
   const sendEmail = (e) => {

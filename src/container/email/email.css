@@ -126,6 +126,7 @@ textarea {
     justify-content: center;
     flex-direction: column;
     padding: 15%;
+    border: transparent;
   }
   .right-e {
     padding: 4rem 0;
@@ -139,6 +140,8 @@ textarea {
     transform: rotate(0deg) skewY(0deg);
     top: 62%;
     left: 0;
+    border: transparent;
+    border-top: 1px solid var(--color-text);
   }
   .input-box {
     width: 90%;
